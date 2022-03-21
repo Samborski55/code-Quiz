@@ -1,0 +1,16 @@
+.collapse{
+    visibility: collapse;
+}
+.hidden {
+    visibility: hidden;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#highScoreLink {
+    text-decoration: none;
+}

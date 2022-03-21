@@ -9,42 +9,48 @@
 </head>
 
 <body>
-    <header>
-        <div id="highScoreLink"></div>
-        <div id="countDown"></div>
+    <header id="header" class="hidden">
+        <a id="highScoreLink"></a>
+        <p id="countDown"></p>
     </header>
-    <main>
-        <section id="startQuiz">
-            <h1 id="welcomeTitle"></h1>
-            <p id ="instructions"></p>
-            <div id ="startButton"></div>
-        </section>
-        <section id="questionAndAnswerBox">
-            <h1 id="question"></h1>
-            <div id="answers">
-                <p id="answerA"></p>
-                <p id="answerB"></p>
-                <p id="answerC"></p>
-                <p id="answerD"></p>
-            </div>
-            <div id="feedback"></div>
-        </section>
-        <section id="allDone">
-            <div id="finished"></div>
-            <div id="score"></div>
-            <div id="highScoreSubmit"></div>
-        </section>
-        <section id="highScores">
-            <h1 id="highScoresTitle"></h1>
-            <div id="highScoresList"></div>
-            <div id="buttons">
-                <div id="goBack"></div>
-                <div id="clearHighScores"></div>
-            </div>
-            
+    <main id = "main">
+        <section id="mainBox">
+            <section id="startPage" class="collapse">
+                <h1 id="welcomeTitle"></h1>
+                <p id ="instructions"></p>
+                <button id ="startButton"></button>
+            </section>
+            <section id="questionAndAnswerBox" class="collapse">
+                <h1 id="question"></h1>
+                <div id="answers">
+                    <button id="answerA" class="answerButtons"></button>
+                    <button id="answerB" class="answerButtons"></button>
+                    <button id="answerC" class="answerButtons"></button>
+                    <button id="answerD" class="answerButtons"></button>
+                </div>
+                <div id="feedback"></div>
+            </section>
+            <section id="submitScore" class="collapse">
+                <h1 id="allDone"></h1>
+                <p id="finalScore"></p>
+                <div id="submitInitialsBlock">
+                    <p id="enterInitials"></p>
+                    <form id="initialsBox"></form>
+                    <button id="highScoreSubmit"></button>
+                </div>
+            </section>
+            <section id="highScores" class="collapse">
+                <h1 id="highScoresTitle"></h1>
+                <div id="highScoresList"></div>
+                <div id="buttons">
+                    <div id="goBack"></div>
+                    <div id="clearHighScores"></div>
+                </div>
+                
+            </section>
         </section>
     </main>
-    <footer>
+    <footer class="hidden">
 
     </footer> 
     <script src="./assets/js/script.js"> </script>   
